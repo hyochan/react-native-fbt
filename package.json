@@ -6,7 +6,7 @@
         "@codegen-source : fbsource\/xplat\/intl\/oss-fbt\/packages\/react-native-fbt\/package.json",
         "@generated SignedSource<<a201d927629272fb2f323ae3e8d5f582>>"
     ],
-    "name": "@dooboo/react-native-fbt",
+    "name": "react-native-fbt",
     "title": "FBT React Native Module",
     "version": "0.0.8",
     "description": "Native module to enable the usage of the FBT translation framework in React Native apps.",
