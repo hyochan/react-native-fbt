@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   s.version         = package["version"]
   s.summary         = package["description"]
   s.description     = "react-native-fbt"
-  s.homepage        = "https://github.com/facebook/fbt.git"
+  s.homepage        = "https://github.com/hyochan/react-native-fbt.git"
   s.license         = "MIT"
   s.platforms       = { :ios => "12.4", :tvos => "12.4" }
   s.compiler_flags  = folly_compiler_flags + ' -Wno-nullability-completeness'
   s.author          = "Facebook, Inc. and its affiliates"
-  s.source          = { :git => "https://github.com/facebook/fbt.git", :tag => "#{s.version}" }
+  s.source          = { :git => "https://github.com/hyochan/react-native-fbt.git", :tag => "#{s.version}" }
 
   s.source_files    = "ios/**/*.{h,m,mm,swift}"
   s.requires_arc    = true
