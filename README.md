@@ -1,17 +1,14 @@
-# react-native-fbt
+# @dooboo/react-native-fbt
+
+> The module is forked from `react-native-fbt`. Released to `@dooboo/react-native-fbt`. This repo fixes the build problem caused by the `codegen` temporarily.
 
 React Native module to enable the use of the [FBT translation framework](https://facebook.github.io/fbt/) in React Native apps (iOS/Android).
 
 ## Getting started
 
-`$ yarn add react-native-fbt --dev`
-
-### Mostly automatic installation
-
-`$ react-native link react-native-fbt`
+`$ yarn add @dooboo/react-native-fbt --dev`
 
 ### Manual installation
-
 
 #### iOS
 
@@ -23,20 +20,24 @@ React Native module to enable the use of the [FBT translation framework](https:/
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
-  - Add `import com.facebook.react.modules.FbtPackage;` to the imports at the top of the file
-  - Add `new FbtPackage()` to the list returned by the `getPackages()` method
+
+- Add `import com.facebook.react.modules.FbtPackage;` to the imports at the top of the file
+- Add `new FbtPackage()` to the list returned by the `getPackages()` method
+
 2. Append the following lines to `android/settings.gradle`:
-    ```
-    include ':react-native-fbt'
-    project(':react-native-fbt').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbt/android')
-    ```
+   ```
+   include ':react-native-fbt'
+   project(':react-native-fbt').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbt/android')
+   ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-    ```
-      compile project(':react-native-fbt')
-    ```
+   ```
+     compile project(':react-native-fbt')
+   ```
 
 ## Usage
+
 [React Native Demo App](https://github.com/facebook/fbt/tree/rn-demo-app)
 
 ## Notes
+
 - The only currently supported way for changing the app language is by changing the language on the device itself. This native library depends on how the Android OS selects files depending on the language of the device.
